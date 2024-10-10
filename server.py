@@ -15,6 +15,7 @@ def index():
 
 @app.route('/weather')
 def get_weather():
+    # in Flask, the 'city' in the parameter refers to the input element's name over at the html file, not the id
     city = request.args.get('city')
 
     
